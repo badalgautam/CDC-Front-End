@@ -1,0 +1,44 @@
+/* Style for the entire login container */
+.login-container {
+    max-width: 320px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Style for form elements */
+  .login-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Added to include padding in width */
+  }
+  
+  /* Style for the login button */
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5cb85c; /* Changed color for a fresh look */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .login-button:hover {
+    background-color: #4cae4c; /* Darker shade on hover */
+  }

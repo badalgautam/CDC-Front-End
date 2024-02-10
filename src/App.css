@@ -1,0 +1,63 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-image-container {
+  width: 50%;
+}
+
+.signup-image {
+  width: 100%;
+  height: auto;
+}
+.signUp {
+  margin-left: 55%;
+}
+.signup-form-container {
+  width: 50%;
+  padding: 20px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  margin-left: 30%;
+  width: 60%;
+}
+.button {
+  width: 50%;
+  margin-left: 35%;
+  margin-top: 5%;
+}
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

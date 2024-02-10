@@ -1,0 +1,59 @@
+/* Container for the entire signup form */
+
+
+
+.signup-container {
+    max-width: 400px; /* Changed max-width to 400px */
+    margin: 25px auto; /* Reduced margin to 25px */
+    padding: 15px; /* Reduced padding to 15px */
+    background-color: #e2e8f0;
+    border: 1px solid #cbd5e0; /* Reduced border thickness to 1px */
+    border-radius: 5px; /* Reduced border radius to 5px */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1); /* Reduced box shadow */
+  }
+  
+  /* Style for the form itself */
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduced gap between elements */
+  }
+  
+  /* Style for each form field */
+  .signup-form div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Labels styling */
+  .signup-form label {
+    margin-bottom: 4px; /* Reduced margin bottom for labels */
+    font-weight: 500; /* Slightly reduced font weight */
+    color: #4a5568;
+  }
+  
+  /* Input fields styling */
+  .signup-form input[type="text"],
+  .signup-form input[type="email"] {
+    padding: 8px; /* Reduced padding for input fields */
+    border: 1px solid #a0aec0; /* Reduced border thickness for input fields */
+    border-radius: 4px; /* Reduced border radius for input fields */
+    font-size: 14px; /* Reduced font size for input fields */
+    background-color: #edf2f7;
+  }
+  
+  /* Styling for the signup button */
+  .signup-button {
+    padding: 8px 20px; /* Reduced padding for the button */
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 4px; /* Reduced border radius for the button */
+    cursor: pointer;
+    font-size: 16px; /* Reduced font size for the button */
+    transition: background-color 0.3s;
+  }
+  
+  .signup-button:hover {
+    background-color: #2c5282;
+  }
