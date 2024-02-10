@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate instead of
 import LoginPage from '../login/login';
 
 function SignupPage() {
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const navigate = useNavigate(); 
   const [formData, setFormData] = useState({
     username: '',
     firstName: '',
@@ -25,16 +25,9 @@ function SignupPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Implement your signup logic here
     console.log('Signup submitted with data:', formData);
-    // After successful signup, you might want to navigate to the login page
-    // navigate('/login'); // Assuming '/login' is the route for the login page
-  };
+   };
 
-  // Function to handle redirection to the login page
-  // const redirectToLogin = () => {
-  //   navigate('/login'); // Redirect to the login page
-  // };
   return (
     <div className="signup-container">
       <h2>Signup</h2>
