@@ -29,8 +29,9 @@ function SignupPage() {
    };
 
   return (
-    <div className="signup-container">
-      <h2>Signup</h2>
+    <div className="signup-background">
+      <div className="signup-container">
+      <h2 style={{ textAlign: 'center' }}>Signup</h2>
       <form onSubmit={handleSubmit} className="signup-form">
         <div>
           <label htmlFor="username">Username:</label>
@@ -43,25 +44,16 @@ function SignupPage() {
           />
         </div>
         <div>
-          <label htmlFor="firstName">First Name:</label>
+          <label htmlFor="fullname">Full Name:</label>
           <input
             type="text"
-            id="firstName"
-            name="firstName"
-            value={formData.firstName}
+            id="fullname"
+            name="fullname"
+            value={formData.fullname}
             onChange={handleChange}
           />
         </div>
-        <div>
-          <label htmlFor="lastName">Last Name:</label>
-          <input
-            type="text"
-            id="lastName"
-            name="lastName"
-            value={formData.lastName}
-            onChange={handleChange}
-          />
-        </div>
+        
         <div>
           <label htmlFor="mobileNo">Mobile No:</label>
           <input
@@ -82,29 +74,9 @@ function SignupPage() {
             onChange={handleChange}
           />
         </div>
-        <div>
-          <label htmlFor="department">Department:</label>
-          <input
-            type="text"
-            id="department"
-            name="department"
-            value={formData.department}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="role">Role:</label>
-          <input
-            type="text"
-            id="role"
-            name="role"
-            value={formData.role}
-            onChange={handleChange}
-          />
-        </div>
-        <button type="submit" className="signup-button">Signup</button>
-      <button onClick={() => navigate('/login')} className="redirect-button">Go to Login</button> // Use navigate instead of useNavigate
+         <button onClick={() => navigate('/login')} className="redirect-button">Submit</button> 
       </form>
+    </div>
     </div>
   );
 }

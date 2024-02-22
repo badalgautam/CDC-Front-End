@@ -1,10 +1,21 @@
 /* Style for the entire login container */
+.login-background{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-image: url('https://wallpaperswide.com/download/light_background-wallpaper-3000x2000.jpg');
+  background-size: cover; /* Changed background-size to fixed values */
+  background-repeat: no-repeat;
+
+  
+}
 .login-container {
     max-width: 320px;
     margin: 80px auto;
     padding: 40px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e2e8f0;
+    border: 1px solid #cbd5e0;
     border-radius: 8px;
   }
   
@@ -21,7 +32,8 @@
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #a0aec0;
+    background-color: #edf2f7;
     border-radius: 4px;
     box-sizing: border-box; /* Added to include padding in width */
   }

@@ -1,15 +1,22 @@
 /* Container for the entire signup form */
 
-
-
+.signup-background{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-image: url('https://wallpaperswide.com/download/light_background-wallpaper-3000x2000.jpg');
+    background-size: 100% 100%; /* Changed background-size to fixed values */
+    background-repeat: no-repeat;
+}
 .signup-container {
-    max-width: 400px; /* Changed max-width to 400px */
-    margin: 25px auto; /* Reduced margin to 25px */
-    padding: 15px; /* Reduced padding to 15px */
+    max-width: 320px;
+    margin: 80px auto;
+    padding: 20px;/* Changed padding to 15px */
     background-color: #e2e8f0;
     border: 1px solid #cbd5e0; /* Reduced border thickness to 1px */
-    border-radius: 5px; /* Reduced border radius to 5px */
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1); /* Reduced box shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Reduced box shadow */
   }
   
   /* Style for the form itself */
@@ -27,7 +34,7 @@
   
   /* Labels styling */
   .signup-form label {
-    margin-bottom: 4px; /* Reduced margin bottom for labels */
+    margin-bottom: 1px; /* Reduced margin bottom for labels */
     font-weight: 500; /* Slightly reduced font weight */
     color: #4a5568;
   }
@@ -43,7 +50,7 @@
   }
   
   /* Styling for the signup button */
-  .signup-button {
+  .redirect-button {
     padding: 8px 20px; /* Reduced padding for the button */
     background-color: #3182ce;
     color: white;
