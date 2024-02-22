@@ -10,8 +10,38 @@ function LoginPage() {
     console.log('Login submitted for username:', username);
   };
 
+  const handleLogin = async () => {
+    try {
+      const response = await fetch('https://customerdigitalconnect.com/authenticate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          "username": username,
+          "password": password
+        }),
+      });
+      
+      const data = await response.json();
+      console.log('Login token:', data.token);
+
+      // Redirect to inbox page after successful login
+      if (response.ok) {
+        window.location.href = '/inbox';
+      } else {
+        if (data.code === 500 && data.status === 'failed' && data.message === 'INVALID_CREDENTIALS') {
+          alert('Invalid credentials. Please check your username and password.');
+        }
+      }
+    } catch (error) {
+      console.error('Error during login:', error);
+    }
+  };
+
   return (
-    <div className="login-container">
+    <div className="login-background">
+      <div className="login-container">
       <h2>Login</h2>
       <form onSubmit={handleSubmit} className="login-form">
         <div>
@@ -22,6 +52,7 @@ function LoginPage() {
             className="username-input" // Ensure this class is defined if you want specific styles
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            required // Added 'required' attribute for mandatory input
           />
         </div>
         <div>
@@ -32,10 +63,12 @@ function LoginPage() {
             className="password-input" // Ensure this class is defined if you want specific styles
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required // Added 'required' attribute for mandatory input
           />
         </div>
-        <button type="submit" className="login-button">Login</button>
+        <button type="submit" className="login-button" onClick={username !== '' && password !== '' ? handleLogin : null}>Login</button>
       </form>
+    </div>
     </div>
   );
 }
