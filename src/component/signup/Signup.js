@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Signup.css'; // Ensure you have a corresponding CSS file for styling
+import './signup.css'; // Ensure you have a corresponding CSS file for styling
 import { useNavigate } from 'react-router-dom'; // Import useNavigate instead of useNavigationType
 import LoginPage from '../login/login';
 

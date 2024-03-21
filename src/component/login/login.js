@@ -28,6 +28,7 @@ function LoginPage() {
 
       // Redirect to inbox page after successful login
       if (response.ok) {
+        sessionStorage.setItem('authToken', data.token);
         window.location.href = '/inbox';
       } else {
         if (data.code === 500 && data.status === 'failed' && data.message === 'INVALID_CREDENTIALS') {

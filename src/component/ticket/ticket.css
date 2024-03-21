@@ -1,0 +1,22 @@
+.inbox-container {
+  display: grid;
+  grid-template-columns: 0.7fr 4.3fr;
+  height: 99.9vh;
+  max-height: 99.9vh;
+  overflow: hidden;
+  margin-bottom: 0.1vh;
+  /* background-color: red; */
+  box-sizing: border-box;
+}
+
+
+.inbox-parts {
+  /* padding: 10px; */
+  display: grid;
+  grid-template-columns: 1.3fr 3fr;
+  /* border: 1px solid #ccc; */
+  height: 100%;
+  overflow: hidden;
+  /* background-color: blue; */
+  /* background-color: red;   */
+}
